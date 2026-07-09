@@ -4,7 +4,7 @@
 
 本项目实现了一套完整的端到端物联网数据采集与监控系统，采用 **CH32V307 + RT-Thread** 作为底层数据采集节点，结合 **ESP32-C6 WiFi通信模块**构建边缘网关，通过 **MQTT协议**实现设备数据上传，并使用 **Python + Flask + WebSocket** 搭建实时Web监控平台。
 
-系统实现了从传感器采集、串口通信、数据协议转换、MQTT云端传输，到Web实时可视化的完整数据链路。
+系统实现了从传感器采集、串口通信、串口控制、数据协议转换、MQTT云端传输，到Web实时可视化的完整数据链路。
 
 ---
 
@@ -78,13 +78,13 @@ CH32V307通过UART向ESP32-C6发送传感器数据。
 自定义轻量级通信协议：
 
 ```
-$temperature,humidity,light_adc,light_mv#
+$temperature,humidity,light_adc,light_mv,LED_state#
 ```
 
 示例：
 
 ```
-$27,71,36,29#
+$27,71,36,29,0#
 ```
 
 ESP32-C6负责接收、解析并转换为结构化数据。
@@ -113,7 +113,8 @@ JSON示例：
     "temperature": 27,
     "humidity": 71,
     "light_adc": 36,
-    "light_mv": 29
+    "light_mv": 29,
+    "led_state": 0
 }
 ```
 
