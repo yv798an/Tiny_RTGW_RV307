@@ -12,11 +12,6 @@ void I2C_Scan(void)
 
     for(addr = 1; addr < 127; addr++)
     {
-
-        /*
-         * 发送地址，不发送数据
-         */
-
         if(I2C_Write(addr, RT_NULL, 0) == 0)
         {
             rt_kprintf(

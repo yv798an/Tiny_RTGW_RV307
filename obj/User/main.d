@@ -15,7 +15,9 @@ User/main.o: ../User/main.c \
  d:/WCH_qinheng/project/Tiny_RTGW_RV307/rtthread/components/drivers/include/ipc/pipe.h \
  d:/WCH_qinheng/project/Tiny_RTGW_RV307/rtthread/components/drivers/include/ipc/poll.h \
  d:/WCH_qinheng/project/Tiny_RTGW_RV307/rtthread/components/drivers/include/drivers/serial.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/rtthread/components/drivers/include/drivers/pin.h
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/rtthread/components/drivers/include/drivers/pin.h \
+ ../User/../equipment/sensor/sensor_data.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/GUI/GUI_init.h
 
 d:/WCH_qinheng/project/Tiny_RTGW_RV307/rtthread/include/rtthread.h:
 
@@ -50,3 +52,7 @@ d:/WCH_qinheng/project/Tiny_RTGW_RV307/rtthread/components/drivers/include/ipc/p
 d:/WCH_qinheng/project/Tiny_RTGW_RV307/rtthread/components/drivers/include/drivers/serial.h:
 
 d:/WCH_qinheng/project/Tiny_RTGW_RV307/rtthread/components/drivers/include/drivers/pin.h:
+
+../User/../equipment/sensor/sensor_data.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/GUI/GUI_init.h:

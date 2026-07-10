@@ -5,6 +5,7 @@
 #include "uart_service.h"
 
 #include "../sensor/sensor_service.h"
+#include "../sensor/sensor_data.h"
 
 #include "ch32v30x.h"
 
@@ -102,7 +103,7 @@ void uart_service_thread(void *parameter)
         if(tick >= 50)
         {
             tick = 0;
-            if(sensor_get_data(&data)==0)
+            if(sensor_data_get(&data)==0)
             {
                 rt_snprintf(
                     tx_buf,

@@ -437,15 +437,11 @@
 ./equipment/I2C/bsp_i2c1_safe.o
 ./equipment/I2C/i2c_scan.o
 ./equipment/ADC/bsp_adc.o
-./equipment/Buzzer.o
 ./equipment/DHT20.o
-./equipment/KeyBoard.o
-./equipment/buzzer_thread.o
 ./equipment/light_sensor_thread.o
 ./drivers/drv_gpio.o
 ./drivers/drv_usart.o
 ./User/ch32v30x_it.o
-./User/lcd.o
 ./User/main.o
 ./User/system_ch32v30x.o
 ./Startup/startup_ch32v30x_D8C.o
@@ -475,10 +471,8 @@
 ./Peripheral/src/ch32v30x_tim.o
 ./Peripheral/src/ch32v30x_usart.o
 ./Peripheral/src/ch32v30x_wwdg.o
-./GUI/GUI_control.o
 ./GUI/GUI_dashboard.o
 ./GUI/GUI_init.o
-./GUI/GUI_monitor.o
-./GUI/GUI_setting.o
+./GUI/ili9341.o
 ./Debug/debug.o
 ./Core/core_riscv.o

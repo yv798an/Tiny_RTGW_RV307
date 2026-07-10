@@ -24,8 +24,8 @@
 #define  delay_ms(x)  Delay_Ms(x)
 #define  delay_us(x)  Delay_Us(x)
 
-#define LCD_W 240
-#define LCD_H 240
+#define LCD_W 32
+#define LCD_H 24
 
 //POINT_COLOR
 #define WHITE            0xFFFF

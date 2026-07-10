@@ -17,13 +17,12 @@ extern "C" {
  *      INCLUDES
  *********************/
 #include "lvgl.h"
-#include "lcd.h"
 
 /*********************
  *      DEFINES
  *********************/
-#define MY_DISP_HOR_RES LCD_W
-#define MY_DISP_VER_RES LCD_H
+#define MY_DISP_HOR_RES 320
+#define MY_DISP_VER_RES 240
 
 /**********************
  *      TYPEDEFS

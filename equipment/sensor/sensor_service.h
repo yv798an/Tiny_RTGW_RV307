@@ -5,7 +5,6 @@
 
 void sensor_service_thread(void *parameter);
 
-int sensor_get_data(sensor_data_t *data);
 
 int sensor_set_led_state(uint8_t state);
 #endif
