@@ -62,12 +62,20 @@ void sensor_thread_entry(void *parameter)
         Light_Update(&sensor_data);
 
         rt_kprintf(
+<<<<<<< HEAD
             "$%d,%d,%d,%d,%d#\r\n",
             (int)sensor_data.temperature,
             (int)sensor_data.humidity,
             sensor_data.light_adc,
             sensor_data.light_mv,
             sensor_data.led_state
+=======
+            "$%d,%d,%d,%d#\r\n",
+            (int)sensor_data.temperature,
+            (int)sensor_data.humidity,
+            sensor_data.light_adc,
+            sensor_data.light_mv
+>>>>>>> d22a0d8333c48ec29e9659a4ca0d735766067e0a
         );
         rt_thread_mdelay(2000);
     }

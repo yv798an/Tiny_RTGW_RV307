@@ -45,6 +45,7 @@ void sensor_service_thread(void *parameter)
         adc =ADC_Read_Avg(ADC_Channel_11,10);
         data.light_adc = adc;
         data.light_mv = adc * 3300 / 4095;
+<<<<<<< HEAD
 
         {
             sensor_data_t tmp;
@@ -53,6 +54,8 @@ void sensor_service_thread(void *parameter)
                 data.led_state = tmp.led_state;
             }
         }
+=======
+>>>>>>> d22a0d8333c48ec29e9659a4ca0d735766067e0a
 
         sensor_data_update(&data);
         rt_thread_mdelay(1000);
