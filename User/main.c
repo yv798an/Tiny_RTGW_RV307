@@ -1,6 +1,7 @@
 #include <rtthread.h>
 #include <rtdevice.h>
-
+#include "../equipment/sensor/sensor_data.h"
+#include "GUI_init.h"
 /*
  * sensor线程入口
  */
@@ -21,6 +22,8 @@ int main(void)
     rt_kprintf("====================\n");
     rt_kprintf("Smart Gateway Start\n");
     rt_kprintf("====================\n");
+
+    sensor_data_init();
 
     /*
      * 创建传感器采集线程
@@ -79,6 +82,8 @@ int main(void)
             "uart thread create failed!\r\n"
         );
     }
+
+    GUI_INIT();
 
     return 0;
 }

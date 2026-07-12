@@ -19,6 +19,7 @@ equipment/usart/uart_service.o: ../equipment/usart/uart_service.c \
  ../equipment/usart/uart_service.h \
  ../equipment/usart/../sensor/sensor_service.h \
  ../equipment/usart/../sensor/sensor_data.h \
+ ../equipment/usart/../sensor/sensor_data.h \
  d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x.h \
  d:/WCH_qinheng/project/Tiny_RTGW_RV307/Core/core_riscv.h \
  d:/WCH_qinheng/project/Tiny_RTGW_RV307/User/system_ch32v30x.h \
@@ -86,6 +87,8 @@ d:/WCH_qinheng/project/Tiny_RTGW_RV307/rtthread/components/drivers/include/drive
 ../equipment/usart/uart_service.h:
 
 ../equipment/usart/../sensor/sensor_service.h:
+
+../equipment/usart/../sensor/sensor_data.h:
 
 ../equipment/usart/../sensor/sensor_data.h:
 

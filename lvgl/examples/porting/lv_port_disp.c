@@ -1,3 +1,4 @@
+#include "ili9341.h"
 /**
  * @file lv_port_disp_templ.c
  *
@@ -101,7 +102,7 @@ void lv_port_disp_init(void)
     /*Set up the functions to access to your display*/
 
     /*Set the resolution of the display*/
-    disp_drv.hor_res = 240;
+    disp_drv.hor_res = 320;
     disp_drv.ver_res = 240;
 
     /*Used to copy the buffer's content to the display*/
@@ -137,21 +138,14 @@ static void disp_init(void)
  *'lv_disp_flush_ready()' has to be called when finished.*/
 static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p)
 {
-    int32_t w = area->x2 - area->x1 + 1;
-    int32_t h = area->y2 - area->y1 + 1;
-    int32_t x, y;
+    uint32_t size;
+    size = (area->x2 - area->x1 + 1) * (area->y2 - area->y1 + 1);
 
-    lcd_address_set(area->x1, area->y1, area->x2, area->y2);
-
-    for (y = 0; y < h; y++) {
-        for (x = 0; x < w; x++) {
-            lcd_draw_point_color(area->x1 + x, area->y1 + y, color_p->full);
-            color_p++;
-        }
-    }
-
+    ILI9341_Set_Address(area->x1, area->y1, area->x2, area->y2);
+    ILI9341_Write_LVGL_Buffer(color_p, size);
     lv_disp_flush_ready(disp_drv);
 }
+
 
 /*OPTIONAL: GPU INTERFACE*/
 

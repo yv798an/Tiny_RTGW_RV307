@@ -1,6 +1,35 @@
 lvgl/examples/porting/lv_port_disp.o: \
  ../lvgl/examples/porting/lv_port_disp.c \
- ../lvgl/examples/porting/lv_port_disp.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/GUI/ili9341.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Core/core_riscv.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/User/system_ch32v30x.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/User/ch32v30x_conf.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_adc.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_bkp.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_can.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_crc.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_dac.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_dbgmcu.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_dma.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_exti.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_flash.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_fsmc.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_gpio.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_i2c.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_iwdg.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_pwr.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_rcc.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_rtc.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_sdio.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_spi.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_tim.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_usart.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_wwdg.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/User/ch32v30x_it.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Debug/debug.h \
+ d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_misc.h \
  d:/WCH_qinheng/project/Tiny_RTGW_RV307/lvgl/lvgl.h \
  d:/WCH_qinheng/project/Tiny_RTGW_RV307/lvgl/src/misc/lv_log.h \
  d:\wch_qinheng\project\tiny_rtgw_rv307\lvgl\src\lv_conf_internal.h \
@@ -220,39 +249,68 @@ lvgl/examples/porting/lv_port_disp.o: \
  d:\wch_qinheng\project\tiny_rtgw_rv307\lvgl\src\lvgl.h \
  d:/WCH_qinheng/project/Tiny_RTGW_RV307/lvgl/src/extra/widgets/span/lv_span.h \
  d:\wch_qinheng\project\tiny_rtgw_rv307\lvgl\src\lvgl.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/User/lcd.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Debug/debug.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Core/core_riscv.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/User/system_ch32v30x.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/User/ch32v30x_conf.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_adc.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_bkp.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_can.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_crc.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_dac.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_dbgmcu.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_dma.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_exti.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_flash.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_fsmc.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_gpio.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_i2c.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_iwdg.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_pwr.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_rcc.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_rtc.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_sdio.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_spi.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_tim.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_usart.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_wwdg.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/User/ch32v30x_it.h \
- d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_misc.h \
+ ../lvgl/examples/porting/lv_port_disp.h \
  ../lvgl/examples/porting/../../lvgl.h
 
-../lvgl/examples/porting/lv_port_disp.h:
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/GUI/ili9341.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Core/core_riscv.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/User/system_ch32v30x.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/User/ch32v30x_conf.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_adc.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_bkp.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_can.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_crc.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_dac.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_dbgmcu.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_dma.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_exti.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_flash.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_fsmc.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_gpio.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_i2c.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_iwdg.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_pwr.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_rcc.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_rtc.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_sdio.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_spi.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_tim.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_usart.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_wwdg.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/User/ch32v30x_it.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Debug/debug.h:
+
+d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_misc.h:
 
 d:/WCH_qinheng/project/Tiny_RTGW_RV307/lvgl/lvgl.h:
 
@@ -692,64 +750,6 @@ d:/WCH_qinheng/project/Tiny_RTGW_RV307/lvgl/src/extra/widgets/span/lv_span.h:
 
 d:\wch_qinheng\project\tiny_rtgw_rv307\lvgl\src\lvgl.h:
 
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/User/lcd.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Debug/debug.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Core/core_riscv.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/User/system_ch32v30x.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/User/ch32v30x_conf.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_adc.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_bkp.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_can.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_crc.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_dac.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_dbgmcu.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_dma.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_exti.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_flash.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_fsmc.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_gpio.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_i2c.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_iwdg.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_pwr.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_rcc.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_rtc.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_sdio.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_spi.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_tim.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_usart.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_wwdg.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/User/ch32v30x_it.h:
-
-d:/WCH_qinheng/project/Tiny_RTGW_RV307/Peripheral/inc/ch32v30x_misc.h:
+../lvgl/examples/porting/lv_port_disp.h:
 
 ../lvgl/examples/porting/../../lvgl.h:

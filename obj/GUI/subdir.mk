@@ -5,25 +5,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../GUI/GUI_control.c \
 ../GUI/GUI_dashboard.c \
 ../GUI/GUI_init.c \
-../GUI/GUI_monitor.c \
-../GUI/GUI_setting.c 
+../GUI/ili9341.c 
 
 C_DEPS += \
-./GUI/GUI_control.d \
 ./GUI/GUI_dashboard.d \
 ./GUI/GUI_init.d \
-./GUI/GUI_monitor.d \
-./GUI/GUI_setting.d 
+./GUI/ili9341.d 
 
 OBJS += \
-./GUI/GUI_control.o \
 ./GUI/GUI_dashboard.o \
 ./GUI/GUI_init.o \
-./GUI/GUI_monitor.o \
-./GUI/GUI_setting.o 
+./GUI/ili9341.o 
 
 DIR_OBJS += \
 ./GUI/*.o \

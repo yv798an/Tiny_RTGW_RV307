@@ -6,17 +6,14 @@
 * Description        : Reference files for all GUI functions called in this project
 *******************************************************************************/
 
-#ifndef GUI_INIT_H
-#define GUI_INIT_H
+#ifndef __GUI_INIT_H__
+#define __GUI_INIT_H__
 
-#include "GUI_dashboard.h"
-/* 如果后续有其他页面，也在这里引入
-#include "GUI_monitor.h"
-#include "GUI_chart.h"
-#include "GUI_control.h"
-#include "GUI_setting.h"
-*/
+#include <rtthread.h>
+
+/* 导出邮箱给传感器线程使用 */
+extern struct rt_mailbox gui_mb;
 
 void GUI_INIT(void);
 
-#endif /* GUI_INIT_H */
+#endif /* __GUI_INIT_H__ */

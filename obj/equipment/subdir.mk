@@ -5,24 +5,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../equipment/Buzzer.c \
 ../equipment/DHT20.c \
-../equipment/KeyBoard.c \
-../equipment/buzzer_thread.c \
 ../equipment/light_sensor_thread.c 
 
 C_DEPS += \
-./equipment/Buzzer.d \
 ./equipment/DHT20.d \
-./equipment/KeyBoard.d \
-./equipment/buzzer_thread.d \
 ./equipment/light_sensor_thread.d 
 
 OBJS += \
-./equipment/Buzzer.o \
 ./equipment/DHT20.o \
-./equipment/KeyBoard.o \
-./equipment/buzzer_thread.o \
 ./equipment/light_sensor_thread.o 
 
 DIR_OBJS += \
