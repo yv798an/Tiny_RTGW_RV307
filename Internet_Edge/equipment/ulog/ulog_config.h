@@ -1,0 +1,13 @@
+#ifndef ULOG_CONFIG_H
+#define ULOG_CONFIG_H
+
+
+#define ULOG_ENABLED
+
+
+#define ULOG_MAX_SUBSCRIBERS 4
+
+#define ULOG_MAX_MESSAGE_LENGTH 128
+
+
+#endif
