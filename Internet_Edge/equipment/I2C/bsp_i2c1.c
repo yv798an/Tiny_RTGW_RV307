@@ -78,9 +78,6 @@ void I2C1_Init(void)
     I2C_Init(I2C1, &I2C_InitStructure);
     I2C_Cmd(I2C1, ENABLE);
 
-    /* Polling mode: the I2C event/error interrupts are intentionally left
-       disabled. The helpers below poll the status flags with a timeout,
-       which is robust for the low-rate DHT20 access. */
 }
 
 static uint8_t I2C_Wait(uint32_t event, uint32_t timeout_ms)
